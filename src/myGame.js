@@ -2,7 +2,7 @@
 
 	var p; //shourtcut to reference prototypes
 
-	lib.prperties = {
+	lib.properties = {
 		width: 960,
 		height: 600,
 		fps: 60,
