@@ -43,4 +43,4 @@ function handleComplete() {
 	    requestAnimationFrame( update );
 	};
 	requestAnimationFrame( update );
-}());
+})();
