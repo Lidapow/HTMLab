@@ -17,7 +17,7 @@ function handleFileLoad(evt) {
 function handleComplete() {
 	exportRoot = new lib.MyGame();
 
-	stage = new createjs.Stage(canvas);
+	stage = new createjs.SpriteStage(canvas);
 	stage.addChild(exportRoot);
 	stage.update();
 
