@@ -24,3 +24,9 @@ function handleComplete() {
 	createjs.Ticker.setFPS(lib.properties.fps);
 	createjs.Ticker.addEventListener("tick", stage);
 }
+
+function addStats () {
+	var stats = new Stats();
+	stats.setMode(0);
+	$(this).addChild(stats.domElement);
+}
