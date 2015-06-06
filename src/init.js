@@ -25,8 +25,22 @@ function handleComplete() {
 	createjs.Ticker.addEventListener("tick", stage);
 }
 
-function addStats () {
+(function() {
 	var stats = new Stats();
-	stats.setMode(0);
-	$(this).addChild(stats.domElement);
-}
+	stats.setMode(1); // 0: fps, 1: ms
+
+	// align top-left
+	stats.domElement.style.position = 'absolute';
+	stats.domElement.style.left = '0px';
+	stats.domElement.style.top = '0px';
+
+	$("body").append( stats.domElement );
+
+	var update = function () {
+	    stats.begin();
+	    // monitored code goes here
+	    stats.end();
+	    requestAnimationFrame( update );
+	};
+	requestAnimationFrame( update );
+}());
