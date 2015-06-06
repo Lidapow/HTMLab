@@ -5,7 +5,7 @@
 	lib.properties = {
 		width: 960,
 		height: 600,
-		fps: 24,
+		fps: 70,
 		color: "#999",
 		manifest: [
 			{src:"img/dove.png", id:"Symbol"},
@@ -19,7 +19,7 @@
 
 	(lib.MyGame = function(mode, startPosition, loop) {
 		this.initialize(mode, startPosition, loop, {})
-	}).prototype = p = new cjs.MovieClip();
+	}).prototype = p = new cjs.Bitmap();
 	p.nominalBounds = new cjs.Rectangle(0,0,960,600);
 })(lib = lib||{}, images = images||{}, createjs = createjs||{});
 var lib, images, createjs;
