@@ -5,7 +5,7 @@
 	lib.properties = {
 		width: 960,
 		height: 600,
-		fps: 60,
+		fps: 24,
 		color: "#999",
 		manifest: [
 			{src:"img/dove.png", id:"Symbol"},
