@@ -1,7 +1,7 @@
 var canvas, stage, exportRoot;
 
 function init() {
-	canvas = document.getElementById("canvas");
+	canvas = document.getElementById("game");
 	images = images||{};
 
 	var loader = new createjs.LoadQueue(false);
