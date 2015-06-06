@@ -21,5 +21,5 @@
 		this.initialize(mode, startPosition, loop, {})
 	}).prototype = p = new cjs.MovieClie();
 	p.nominalBounds = new cjs.Rectangle(128,0,128,128);
-})(lib = lib||{}, images = image||{}, createjs = createjs||{});
+})(lib = lib||{}, images = images||{}, createjs = createjs||{});
 var lib, images, createjs;
